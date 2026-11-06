@@ -1,0 +1,17 @@
+.DS_Store
+private/
+tmp/
+Photos/
+College  /
+*.pdf
+*.docx
+*.jpeg
+*.JPG
+*.MOV
+*.mov
+*.pptx
+*.xlsx
+
+# Web-ready site images are published; originals in Photos/ stay private
+!assets/*.jpg
+!assets/**/*.jpg

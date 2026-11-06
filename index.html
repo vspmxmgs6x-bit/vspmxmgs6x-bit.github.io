@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Matthew J.A. Watts - leadership, public service, family enterprise, travel, and a life built through curiosity."
+    />
+    <meta name="theme-color" content="#b9d9eb" />
+    <title>Matthew J.A. Watts | A Working Scrapbook</title>
+    <style>
+      @font-face {
+        font-family: "Aldhabi Local";
+        src: local("Aldhabi"), local("Aldhabi Regular");
+        font-display: swap;
+      }
+
+      :root {
+        --blue: #b9d9eb;
+        --blue-soft: #eaf5fa;
+        --blue-deep: #5c9fc4;
+        --blue-text: #2f6a8e;
+        --navy: #082f49;
+        --ink: #183b4f;
+        --muted: #557181;
+        --cream: #fbf8f1;
+        --peach: #f3d8cc;
+        --green: #d9e8dc;
+        --line: rgba(8, 47, 73, 0.16);
+        --white: #fff;
+        --max: 1180px;
+        --font: "Aldhabi Local", Aldhabi, "Palatino Linotype", Georgia, serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--cream);
+        font-family: var(--font);
+        font-size: 1.35rem;
+        line-height: 1.25;
+        text-rendering: optimizeLegibility;
+      }
+      img { max-width: 100%; }
+      a { color: inherit; }
+      a:focus-visible { outline: 3px solid var(--blue-deep); outline-offset: 5px; }
+      h1, h2, h3, p, figure { margin-top: 0; }
+      p:last-child { margin-bottom: 0; }
+
+      .skip-link {
+        position: fixed;
+        z-index: 50;
+        top: 12px;
+        left: 12px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--navy);
+        color: var(--white);
+        transform: translateY(-160%);
+      }
+      .skip-link:focus { transform: translateY(0); }
+      .wrap { width: min(calc(100% - 42px), var(--max)); margin-inline: auto; }
+
+      .site-header {
+        position: sticky;
+        z-index: 20;
+        top: 0;
+        border-bottom: 1px solid rgba(8, 47, 73, 0.08);
+        background: rgba(251, 248, 241, 0.92);
+        backdrop-filter: blur(16px);
+      }
+      .nav {
+        display: flex;
+        min-height: 76px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+      .brand {
+        color: var(--navy);
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .nav-links { display: flex; align-items: center; gap: 24px; }
+      .nav-links a {
+        color: var(--ink);
+        font-size: 1.04rem;
+        text-decoration: none;
+      }
+      .nav-links a:hover { color: var(--navy); }
+
+      .hero {
+        display: grid;
+        min-height: calc(100vh - 76px);
+        grid-template-columns: 1.08fr 0.92fr;
+        align-items: center;
+        gap: clamp(44px, 7vw, 96px);
+        padding-block: 78px 96px;
+      }
+      .kicker {
+        margin-bottom: 14px;
+        color: var(--blue-text);
+        font-size: 1.05rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      h1 {
+        max-width: 760px;
+        margin-bottom: 24px;
+        color: var(--navy);
+        font-size: clamp(4.8rem, 10vw, 8.8rem);
+        font-weight: 500;
+        letter-spacing: -0.045em;
+        line-height: 0.72;
+      }
+      .hero-copy {
+        max-width: 700px;
+        margin-bottom: 30px;
+        color: var(--muted);
+        font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+      }
+      .link-row { display: flex; flex-wrap: wrap; gap: 12px; }
+      .soft-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 50px;
+        padding: 8px 20px;
+        border: 1px solid var(--navy);
+        border-radius: 999px;
+        color: var(--navy);
+        text-decoration: none;
+      }
+      .soft-link.primary { background: var(--navy); color: var(--white); }
+      .soft-link:hover { background: var(--blue); color: var(--navy); }
+
+      .hero-portrait {
+        position: relative;
+        margin: 0;
+        padding: 22px;
+        border-radius: 46% 54% 42% 58% / 54% 38% 62% 46%;
+        background: var(--blue);
+      }
+      .hero-portrait::after {
+        position: absolute;
+        z-index: -1;
+        right: -28px;
+        bottom: -34px;
+        width: 46%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: var(--peach);
+        content: "";
+      }
+      .hero-portrait img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 44% 56% 38% 62% / 54% 42% 58% 46%;
+      }
+      .hero-portrait figcaption {
+        padding: 18px 10px 8px;
+        color: var(--navy);
+        text-align: center;
+      }
+
+      .story-index {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding-block: 0 86px;
+      }
+      .story-index a {
+        padding: 13px 24px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.52);
+        color: var(--navy);
+        text-decoration: none;
+      }
+      .story-index a:nth-child(2n) { background: var(--blue-soft); }
+      .story-index a:nth-child(3n) { background: var(--green); }
+
+      section { padding-block: clamp(84px, 11vw, 150px); }
+      .section-heading { max-width: 860px; margin-bottom: 54px; }
+      .section-heading.center { margin-inline: auto; text-align: center; }
+      h2 {
+        margin-bottom: 18px;
+        color: var(--navy);
+        font-size: clamp(3.8rem, 8vw, 7rem);
+        font-weight: 500;
+        letter-spacing: -0.035em;
+        line-height: 0.78;
+      }
+      .section-heading p {
+        color: var(--muted);
+        font-size: clamp(1.3rem, 2.1vw, 1.65rem);
+      }
+
+      .roots-field {
+        overflow: hidden;
+        border-radius: 72px 72px 160px 72px;
+        background: var(--blue-soft);
+      }
+      .roots-layout {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        align-items: center;
+        gap: 60px;
+      }
+      .roots-copy p { color: var(--muted); }
+      .roots-copy .pullquote {
+        color: var(--navy);
+        font-size: clamp(1.7rem, 3vw, 2.4rem);
+        line-height: 1.05;
+      }
+      .photo-orbit {
+        display: grid;
+        min-height: 0;
+        grid-template-areas:
+          "scout senate"
+          "virginia debate";
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 28px 24px;
+      }
+      .photo-orbit figure {
+        position: static;
+        width: auto;
+        margin: 0;
+        transform: none;
+      }
+      .photo-orbit img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        border-radius: 56px;
+        object-fit: cover;
+        box-shadow: 0 16px 30px rgba(8, 47, 73, 0.14);
+      }
+      .photo-orbit figcaption {
+        margin: 13px 10px 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.1;
+        text-align: center;
+      }
+      .orbit-scout { grid-area: scout; }
+      .orbit-virginia { grid-area: virginia; align-self: center; }
+      .orbit-senate { grid-area: senate; }
+      .orbit-debate { grid-area: debate; }
+
+      .roots-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        margin-top: 70px;
+      }
+      .roots-strip figure { margin: 0; text-align: center; }
+      .roots-strip img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        border-radius: 38px 110px 38px 110px;
+      }
+      .roots-strip figure + figure img { border-radius: 110px 38px 110px 38px; }
+      .roots-strip figcaption { margin-top: 8px; color: var(--muted); font-size: 1rem; }
+
+      .chapters { background: var(--navy); color: #e6f1f6; }
+      .chapters h2 { color: var(--white); }
+      .chapters .kicker, .living-index .kicker { color: var(--blue); }
+      .chapters .section-heading p { color: #b9d1dc; }
+      .chapter-flow { display: grid; gap: 110px; }
+      .chapter {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: center;
+        gap: clamp(42px, 7vw, 90px);
+      }
+      .chapter:nth-child(even) { grid-template-columns: 1.1fr 0.9fr; }
+      .chapter:nth-child(even) .chapter-visual { order: 2; }
+      .chapter-visual { position: relative; }
+      .chapter-visual::before {
+        position: absolute;
+        z-index: 0;
+        inset: -16px 24px 18px -18px;
+        border-radius: 90px 28px 90px 28px;
+        background: rgba(185, 217, 235, 0.17);
+        content: "";
+      }
+      .chapter-visual img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 38px 110px 38px 110px;
+      }
+      .chapter:nth-child(even) .chapter-visual img { border-radius: 110px 38px 110px 38px; }
+      .chapter-copy .chapter-word {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: var(--blue);
+      }
+      .chapter-copy h3 {
+        margin-bottom: 18px;
+        color: var(--white);
+        font-size: clamp(2.8rem, 5vw, 4.5rem);
+        font-weight: 500;
+        line-height: 0.88;
+      }
+      .chapter-copy p { color: #c3d7e1; }
+      .chapter-copy .human-line { color: var(--blue); font-size: 1.5rem; }
+
+      .school {
+        border-radius: 72px 160px 72px 72px;
+        background: var(--white);
+      }
+      .school-intro {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: center;
+        gap: clamp(42px, 7vw, 90px);
+        margin-bottom: 110px;
+      }
+      .school-intro .section-heading { margin-bottom: 0; }
+      .school-intro .section-heading p + p { margin-top: 18px; }
+      .before-after {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        gap: 16px;
+        margin: 0;
+      }
+      .before-after figure { margin: 0; text-align: center; }
+      .before-after img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 999px 999px 48px 48px;
+      }
+      .before-after figure:last-child img { aspect-ratio: 4 / 5; object-position: 70% center; }
+      .before-after figcaption { margin-top: 10px; color: var(--muted); font-size: 1rem; }
+      .school-steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(28px, 4vw, 48px);
+        margin-bottom: 110px;
+      }
+      .school-step img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        margin-bottom: 24px;
+        border-radius: 38px 110px 38px 110px;
+      }
+      .stat-orb {
+        display: grid;
+        aspect-ratio: 4 / 3;
+        place-content: center;
+        margin-bottom: 24px;
+        padding: 24px;
+        border-radius: 110px 38px 110px 38px;
+        background: var(--navy);
+        color: var(--blue);
+        text-align: center;
+        font-size: 1.15rem;
+      }
+      .stat-orb span { display: block; color: var(--white); font-size: clamp(4.5rem, 8vw, 6.5rem); line-height: 0.9; }
+      .school-step:nth-child(2) img { border-radius: 38px 110px 38px 110px; object-position: center 35%; }
+      .school-step .step-label { margin-bottom: 8px; color: var(--blue-text); font-size: 1.02rem; }
+      .school-step h3 {
+        margin-bottom: 14px;
+        color: var(--navy);
+        font-size: clamp(2rem, 3vw, 2.6rem);
+        font-weight: 500;
+        line-height: 0.95;
+      }
+      .school-step p { color: var(--muted); }
+      .school-step .stat-orb { color: var(--blue); }
+      .school-step p + p { margin-top: 14px; }
+      .degrees {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 22px;
+      }
+      .degree {
+        padding: clamp(28px, 4vw, 44px);
+        border-radius: 56px 18px 56px 18px;
+        background: var(--blue-soft);
+      }
+      .degree + .degree { border-radius: 18px 56px 18px 56px; background: var(--green); }
+      .degree img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        margin-bottom: 24px;
+        border-radius: 40px;
+      }
+      .degree h3 {
+        margin-bottom: 6px;
+        color: var(--navy);
+        font-size: clamp(1.8rem, 2.6vw, 2.3rem);
+        font-weight: 500;
+        line-height: 1;
+      }
+      .degree .degree-line { margin-bottom: 20px; color: var(--ink); }
+      .degree p { color: var(--muted); }
+      .degree p + p { margin-top: 12px; }
+      .degree strong { display: block; color: var(--navy); font-weight: 700; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; }
+
+      .career-flow { display: grid; gap: 96px; }
+      .role-entry {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        align-items: start;
+        gap: clamp(36px, 6vw, 80px);
+      }
+      .role-entry.flip .collage { order: 2; }
+      .collage { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      .collage img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 28px;
+      }
+      .collage img:first-child {
+        grid-column: 1 / -1;
+        border-radius: 38px 110px 38px 110px;
+      }
+      .collage.tall img:first-child { grid-column: auto; grid-row: span 2; aspect-ratio: auto; height: 100%; border-radius: 110px 28px 28px 110px; }
+      .collage.tall img:nth-child(2) { border-radius: 28px 90px 28px 28px; }
+      .collage.tall img:nth-child(3) { border-radius: 28px 28px 90px 28px; }
+      .role-copy .chapter-word { display: inline-block; margin-bottom: 8px; color: var(--blue); }
+      .role-copy h3 {
+        margin-bottom: 6px;
+        color: var(--white);
+        font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+        font-weight: 500;
+        line-height: 0.92;
+      }
+      .role-meta { margin-bottom: 20px; color: var(--blue); font-size: 1.1rem; }
+      .role-copy p { color: #c3d7e1; }
+      .role-copy p + p { margin-top: 12px; }
+      .role-copy .human-line { margin-top: 22px; color: var(--blue); font-size: 1.4rem; }
+      .role-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+      .role-card {
+        padding: clamp(28px, 4vw, 44px);
+        border-radius: 56px 18px 56px 18px;
+        background: rgba(185, 217, 235, 0.1);
+      }
+      .role-card + .role-card { border-radius: 18px 56px 18px 56px; }
+      .role-card h3 { font-size: clamp(2rem, 3vw, 2.7rem); }
+      .scrapbook-photo { max-width: 420px; margin: 28px 0 0; }
+      .scrapbook-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 38px 110px 38px 110px;
+      }
+      .scrapbook-photo figcaption, .photo-note { margin-top: 8px; color: var(--muted); font-size: 1rem; }
+
+      .places { background: var(--cream); }
+      .rankings { display: grid; gap: 72px; }
+      .ranking h3 {
+        margin-bottom: 22px;
+        color: var(--navy);
+        font-size: clamp(2rem, 3.4vw, 2.8rem);
+        font-weight: 500;
+        text-align: center;
+      }
+      .rank-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .rank-list li { text-align: center; }
+      .rank-photo {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .rank-text {
+        display: grid;
+        place-items: center;
+        padding: 14px;
+        background: var(--blue-soft);
+        color: var(--navy);
+        font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+        line-height: 1;
+      }
+      .ranking:nth-child(2) .rank-text { background: var(--green); }
+      .ranking:nth-child(3) .rank-text { background: var(--peach); }
+      .rank-name { display: block; margin-top: 12px; color: var(--navy); }
+      .rank-num {
+        display: inline-grid;
+        width: 1.7em;
+        height: 1.7em;
+        place-items: center;
+        margin-right: 6px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: var(--white);
+        font-size: 0.85em;
+      }
+
+      .personal {
+        overflow: hidden;
+        border-radius: 160px 72px 0 0;
+        background: var(--blue-soft);
+      }
+      .personal-grid {
+        display: grid;
+        grid-template-columns: 0.88fr 1.12fr;
+        align-items: center;
+        gap: 70px;
+        margin-bottom: 120px;
+      }
+      .wedding-photo {
+        position: relative;
+        margin: 0;
+      }
+      .wedding-photo::before {
+        position: absolute;
+        z-index: 0;
+        inset: -28px -20px 36px 24px;
+        border-radius: 50%;
+        background: var(--peach);
+        content: "";
+      }
+      .wedding-photo img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 48% 52% 44% 56% / 54% 46% 54% 46%;
+      }
+      .personal-copy h2 { font-size: clamp(4rem, 7vw, 6.7rem); }
+      .personal-copy p { color: var(--muted); }
+      .personal-copy .love-line { color: var(--navy); font-size: 1.65rem; }
+
+      .sports-layout {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        align-items: center;
+        gap: 70px;
+        margin-bottom: 110px;
+      }
+      .sports-copy h3,
+      .curiosity-copy h3 {
+        margin-bottom: 16px;
+        color: var(--navy);
+        font-size: clamp(3rem, 5vw, 4.8rem);
+        font-weight: 500;
+        line-height: 0.88;
+      }
+      .sports-copy p,
+      .curiosity-copy p { color: var(--muted); }
+      .sports-bubbles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+      .sports-bubbles img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .sports-bubbles img:nth-child(3n+2) { transform: translateY(28px); }
+
+      .curiosity-field {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        align-items: center;
+        gap: 70px;
+        padding: clamp(38px, 7vw, 76px);
+        border-radius: 110px 36px 110px 36px;
+        background: var(--white);
+      }
+      .curiosity-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 38px 110px 38px 110px;
+      }
+      .interest-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+      .interest-cloud span {
+        padding: 9px 17px;
+        border-radius: 999px;
+        background: var(--green);
+        color: var(--navy);
+      }
+      .interest-cloud span:nth-child(2n) { background: var(--blue); }
+      .interest-cloud span:nth-child(3n) { background: var(--peach); }
+
+      .living-index { background: var(--navy); color: var(--white); }
+      .living-index h2 { color: var(--white); }
+      .living-index .section-heading p { color: #bdd2dd; }
+      .index-orbs {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 14px;
+      }
+      .index-orbs a {
+        display: grid;
+        aspect-ratio: 1;
+        place-items: center;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 50%;
+        color: var(--white);
+        text-align: center;
+        text-decoration: none;
+      }
+      .index-orbs a:hover { background: var(--blue); color: var(--navy); }
+      .index-orbs a:nth-child(even) { transform: translateY(26px); }
+
+      footer { padding-block: 34px; background: var(--navy); color: #bdd2dd; }
+      .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+      .footer-links { display: flex; gap: 18px; }
+
+      @media (max-width: 900px) {
+        .hero, .roots-layout, .chapter, .chapter:nth-child(even), .personal-grid, .sports-layout, .curiosity-field {
+          grid-template-columns: 1fr;
+        }
+        .hero { min-height: 0; }
+        .hero-portrait { max-width: 650px; }
+        .chapter:nth-child(even) .chapter-visual { order: 0; }
+        .rank-list { grid-template-columns: repeat(3, 1fr); }
+        .role-entry, .role-pair { grid-template-columns: 1fr; }
+        .role-entry.flip .collage { order: 0; }
+        .sports-bubbles { grid-template-columns: repeat(3, 1fr); }
+        .school-intro, .school-steps, .degrees { grid-template-columns: 1fr; }
+        .school-intro .before-after { max-width: 560px; }
+        .index-orbs { grid-template-columns: repeat(3, 1fr); }
+      }
+
+      @media (max-width: 650px) {
+        body { font-size: 1.18rem; }
+        .wrap { width: min(calc(100% - 28px), var(--max)); }
+        .nav { min-height: 68px; flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
+        .brand { font-size: 1.08rem; }
+        .nav-links { flex-wrap: wrap; gap: 4px 14px; }
+        .nav-links a { white-space: nowrap; }
+        h1 { font-size: clamp(4.4rem, 22vw, 6.4rem); }
+        .hero { padding-block: 58px 76px; }
+        .hero-portrait { padding: 14px; }
+        .hero-portrait::after { right: -10px; bottom: -24px; }
+        .chapter-visual::before { inset: -10px 16px 12px -10px; }
+        section { padding-block: 76px; }
+        .roots-field, .personal { border-radius: 52px 52px 100px 52px; }
+        .photo-orbit {
+          max-width: 540px;
+          grid-template-areas:
+            "scout"
+            "virginia"
+            "senate"
+            "debate";
+          grid-template-columns: 1fr;
+          gap: 34px;
+          margin-inline: auto;
+        }
+        .orbit-virginia { width: 78%; justify-self: center; }
+        .chapter-flow, .career-flow { gap: 76px; }
+        .sports-bubbles { grid-template-columns: repeat(2, 1fr); }
+        .sports-bubbles img:nth-child(3n+2) { transform: none; }
+        .rankings { gap: 56px; }
+        .roots-strip { grid-template-columns: 1fr; margin-top: 48px; }
+        .school { border-radius: 52px 100px 52px 52px; }
+        .school-intro, .school-steps { margin-bottom: 76px; }
+        .rank-list { grid-template-columns: repeat(2, 1fr); }
+        .sports-layout, .personal-grid { margin-bottom: 82px; }
+        .curiosity-field { padding: 28px; border-radius: 52px 22px 52px 22px; }
+        .index-orbs { grid-template-columns: repeat(2, 1fr); }
+        .index-orbs a:nth-child(even) { transform: none; }
+        .footer-row { align-items: flex-start; flex-direction: column; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="#top">Matthew J.A. Watts</a>
+        <div class="nav-links">
+          <a href="#story">Story</a>
+          <a href="#chapters">Work</a>
+          <a href="#school">School</a>
+          <a href="#places">Places</a>
+          <a href="#personal">Personal</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div id="top" class="hero wrap">
+        <div>
+          <p class="kicker">Leader · Operator · Investor · Builder</p>
+          <h1>A life built through service, curiosity, and motion.</h1>
+          <p class="hero-copy">
+            I am Matthew Watts. I have led soldiers, grown a family business, studied policy,
+            evaluated investments, crossed all 50 states, and kept a scrapbook through it all.
+            This is the professional story and the personal one—because they have always shaped each other.
+          </p>
+          <div class="link-row" aria-label="Professional profiles">
+            <a class="soft-link primary" href="https://www.linkedin.com/in/matthew-w-2987021ba/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a class="soft-link" href="https://github.com/vspmxmgs6x-bit" target="_blank" rel="noreferrer">Things I build ↗</a>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="assets/headshot.jpg" alt="Professional headshot of Matthew J.A. Watts" width="1200" height="960" />
+          <figcaption>Columbia Business School &amp; SIPA · New York</figcaption>
+        </figure>
+      </div>
+
+      <nav class="story-index wrap" aria-label="Story index">
+        <a href="#roots">Virginia roots</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#legacy">Family enterprise</a>
+        <a href="#school">Grad school</a>
+        <a href="#places">The road</a>
+        <a href="#personal">Life beyond work</a>
+        <a href="#curiosity">What I am building</a>
+      </nav>
+
+      <section id="story" class="roots-field">
+        <div class="wrap roots-layout">
+          <div id="roots" class="roots-copy">
+            <p class="kicker">Where the story begins</p>
+            <h2>Rooted in Virginia. Drawn to the world.</h2>
+            <p class="pullquote">
+              Yorktown made history feel close enough to touch—and public service feel like something ordinary people could enter.
+            </p>
+            <p>
+              I grew up inside Virginia’s historic triangle, where the stories of Yorktown, Williamsburg,
+              Jamestown, democracy, conflict, and unfinished equality were part of the landscape. That early
+              fascination became service as a Virginia House of Delegates Page and a U.S. Senate Page, a defense internship
+              in Senator Harry Reid’s office, and eventually a life spent asking how institutions can work better for people.
+            </p>
+            <p>
+              At West Point, policy debate became my laboratory. I captained the Army Debate Team, qualified
+              for the National Debate Tournament, and learned that a strong argument begins by understanding
+              the person across from you—not by waiting for your turn to speak.
+            </p>
+          </div>
+          <div class="photo-orbit" aria-label="Boy Scouts, Virginia, public service, and debate photographs">
+            <figure class="orbit-scout">
+              <img src="Photos/Boy%20Scouts.jpg" alt="Matthew in a Boy Scout uniform at a ceremony" width="2048" height="1362" />
+              <figcaption>Boy Scouts</figcaption>
+            </figure>
+            <figure class="orbit-virginia">
+              <img src="assets/story/virginia.jpg" alt="Matthew at Buckroe Beach in Virginia" width="768" height="1024" />
+              <figcaption>Virginia, always home</figcaption>
+            </figure>
+            <figure class="orbit-senate">
+              <img src="assets/story/senate-page.jpg" alt="Matthew during his time as a United States Senate Page" width="1024" height="768" />
+              <figcaption>U.S. Senate Page</figcaption>
+            </figure>
+            <figure class="orbit-debate">
+              <img src="assets/story/debate.jpg" alt="Matthew with the Army Debate Team receiving recognition" width="1086" height="724" />
+              <figcaption>College debate made ideas a team sport</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="wrap roots-strip">
+          <figure>
+            <img src="assets/story/boy-scouts.jpg" alt="Matthew in his Boy Scout uniform at a ceremony" width="1400" height="931" />
+            <figcaption>Boy Scouts</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/story/senate-page-biden.jpg" alt="Matthew's U.S. Senate Page class with Vice President Joe Biden" width="960" height="640" />
+            <figcaption>Senate Page class with Vice President Biden</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="chapters" class="chapters">
+        <div class="wrap">
+          <div class="section-heading">
+            <p class="kicker">Professional chapters</p>
+            <h2>Work is most meaningful when it develops people.</h2>
+            <p>
+              The settings have changed—from armored formations to a dental practice to investing—but the throughline is the same: understand the system, care for the people inside it, and leave both stronger.
+            </p>
+          </div>
+
+          <div class="career-flow">
+            <article id="leadership" class="role-entry">
+              <div class="collage">
+                <img src="assets/story/troop-commander.jpg" alt="Matthew and a Republic of Korea Army soldier beside the Blackhawks troop emblem" width="1024" height="768" />
+                <img src="assets/story/troop-command.jpg" alt="Matthew with his troop in formation" width="1024" height="768" />
+                <img src="assets/story/reenlistment.jpg" alt="A reenlistment inside an Army vehicle" width="1024" height="768" />
+              </div>
+              <div class="role-copy">
+                <span class="chapter-word">U.S. Army · 2018–2025</span>
+                <h3>Troop Commander</h3>
+                <p class="role-meta">2023–2025 · Republic of Korea / Tacoma, WA</p>
+                <p>Managed operations and personnel for a 126-person forward-deployed organization, the most forward-deployed unit of its kind, within 5KM of the DMZ in the Republic of Korea.</p>
+                <p>Selected to lead multinational, cross-organizational operations supporting a Presidential-level strategic deterrence initiative in East Asia; recognized with the Draper Award for Leadership as the top-performing business unit in the U.S. Army.</p>
+                <p>Selected by Department of the Army leadership to pilot a new strategic operating model for large-scale competitive operations, validating proof-of-concept for the Army’s new operational framework (ranked #1 of 68 peer organizations).</p>
+                <p class="human-line">During a high-stakes exercise in Korea, my supply specialist told me, “I just want to be better at my job.” Eight months later, she passed the Army’s supply evaluation with the highest score in its history. That is the kind of result I lead for.</p>
+              </div>
+            </article>
+
+            <div class="role-pair">
+              <article class="role-card role-copy">
+                <h3>Chief of Technologies</h3>
+                <p class="role-meta">1st Multi-Domain Task Force · 2022 · Tacoma, WA</p>
+                <p>Built the procurement and vendor management framework for a first-of-its-kind organization; led cross-border implementation of 16 emerging technology systems across 7 countries, enabling regional strategic capability (ranked #1 of 18 peer organizations).</p>
+                <p>Redesigned contracting and procurement processes to support 29x workforce growth (38 to 1,100 personnel) and 15x asset growth (129 to 1,900 equipment items) in under 11 months.</p>
+              </article>
+              <article class="role-card role-copy">
+                <h3>Aide-de-Camp</h3>
+                <p class="role-meta">2021 · Fort Hood, TX / Poland</p>
+                <p>Selected as Chief of Staff-equivalent to the CEO of a 28,000-person organization; managed executive stakeholder engagement, briefings, and scheduling; contributed to strategic planning during a multinational deployment responding to Russian aggression in Eastern Europe.</p>
+                <p>Built a discretionary budget management tool in Power BI that reduced organizational travel waste by $3.9M; over 200 units adopted the practice, with savings totaling $187M in FY 2022.</p>
+              </article>
+            </div>
+
+            <article class="role-entry flip">
+              <div class="collage tall">
+                <img src="assets/story/platoon-leader.jpg" alt="Matthew and a fellow soldier in colored smoke" width="768" height="1024" />
+                <img src="assets/story/executive-officer.jpg" alt="Matthew with fellow officers in cavalry Stetsons" width="1024" height="768" />
+                <img src="assets/story/germany.jpg" alt="Matthew in Germany" width="768" height="1024" />
+              </div>
+              <div class="role-copy">
+                <h3>Platoon Leader &amp; Executive Officer</h3>
+                <p class="role-meta">2019–2020 · Fort Hood, TX / Germany</p>
+                <p>Managed multinational supply chain and logistics operations for the largest NATO joint exercise since 1980 (16 allied nations), supporting a critical strategic deterrence initiative (ranked #1 of 28 peer organizations).</p>
+                <p>Led rapid contingency response operations in Poland; managed cross-border relationships with government, civilian, and multinational partners to coordinate aid delivery and run joint training programs strengthening the NATO partnership (ranked #1 of 26 peer organizations).</p>
+                <p>Founded a diversity and inclusion mentorship program serving 4,500+ personnel; its impact contributed to selection as the first organization of its type to integrate women into previously all-male roles.</p>
+              </div>
+            </article>
+
+            <article id="legacy" class="role-entry">
+              <div class="collage">
+                <img src="assets/story/dentistry.jpg" alt="Groundbreaking ceremony for Watts Family Dentistry" width="1070" height="733" />
+              </div>
+              <div class="role-copy">
+                <span class="chapter-word">Watts Family Dentistry</span>
+                <h3>General Manager &amp; Owner</h3>
+                <p class="role-meta">2023–2026 · Tidewater, VA · ~1,800 patients a year · $2.9M annual revenue</p>
+                <p>My father built this Black-owned practice in Hampton Roads over four decades. After his passing, I stepped into a business I had known all my life but had never run.</p>
+                <p>Led strategy, operations, and finance; improved profit margins by $900K year over year through new KPI tracking and reporting, AI-enabled marketing campaigns aimed at specific demographic segments, and data-driven scheduling.</p>
+                <p>Managed a 25-member clinical, administrative, and operational team; used data on staff utilization and an organizational redesign focused on career development to increase employee retention by 64%.</p>
+                <p class="human-line">Growth matters most when it keeps opportunity, care, and ownership rooted in the community.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="school" class="school">
+        <div class="wrap">
+          <div class="school-intro">
+            <div class="section-heading">
+              <p class="kicker">Back to school</p>
+              <h2>Why I traded command for a classroom.</h2>
+              <p>
+                My father passed away unexpectedly in October 2023, and I inherited the dental practice he had built over four decades. I was commanding a troop at the time, so for the next two years I ran a business I had never been trained to run while leading soldiers.
+              </p>
+              <p>
+                The first hard question was not clinical or financial. It was whether a non-dentist could legally own a dental practice in Virginia. Working through it with lawyers, accountants, and retired dentists I grew up with showed me how much I still had to learn about business, and how much policy shapes what families and small businesses face after a loss.
+              </p>
+              <p>
+                In August 2025 I left the Army and started at Columbia the same month, to study both.
+              </p>
+            </div>
+            <div class="before-after">
+              <figure>
+                <img src="assets/story/army.jpg" alt="Matthew in field gear during his Army service" width="768" height="1024" />
+                <figcaption>U.S. Army, 2018–August 2025</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/story/cbs.jpg" alt="Matthew outside Columbia Business School" width="1024" height="768" />
+                <figcaption>Columbia, August 2025–2028</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="school-steps">
+            <article class="school-step">
+              <p class="stat-orb"><span>6%</span> of businesses in Hampton are Black-owned</p>
+              <p class="step-label">Columbia Business School &amp; SIPA</p>
+              <h3>Business can shape policy.</h3>
+              <p>
+                I chose a joint MBA and Master of International Affairs because the problems I care about do not stay in one lane. In Hampton, half the population is Black, yet only 6% of businesses are Black-owned. The region is growing, but Black communities are losing economic power and influence.
+              </p>
+              <p>
+                Closing that gap takes capital and operators, and it takes policy that lets small businesses and their communities grow. I want the expertise to work on both sides of that problem.
+              </p>
+            </article>
+            <article class="school-step">
+              <img src="assets/story/cprl.jpg" alt="A Seed to Scholars Prep school-design board at the CPRL Design Competition" width="1050" height="1400" />
+              <p class="photo-note">CPRL Design Competition</p>
+              <p class="step-label">Center for Public Research and Leadership</p>
+              <h3>Service without the uniform.</h3>
+              <p>
+                I chose West Point partly because, as a high schooler, I was focused on public education reform. Leaving the Army did not mean leaving public service, and CPRL brought me back to that interest: as an in-semester Associate Consultant, I supported education systems working to improve outcomes for young students.
+              </p>
+              <p>
+                It was the most direct way I found to keep serving, and it confirmed that public service is not confined to a uniform or a title.
+              </p>
+            </article>
+            <article class="school-step">
+              <img src="assets/story/enable-golf.jpg" alt="Participants at the Enable Ventures Disability Golf Scramble" width="1024" height="768" />
+              <p class="step-label">Enable Ventures · Investment Fellow · Summer 2026</p>
+              <h3>Capital aimed at access.</h3>
+              <p>
+                Enable Ventures is a disability-focused impact venture fund on the Sorenson Impact Group platform. I ran diligence on early-stage companies in up-skilling, work technology, and assistive technology; that work supported the firm’s investment in Kalagon.
+              </p>
+              <p>
+                I also maintained a pipeline of 500+ prospective investments, screened Techstars’ 28-company cohort against the fund’s thesis, and wrote market landscapes on K-12 disability EdTech and ASL/sign-language AI for the Managing Partner. Now I am a Search Fund MBA Intern at Bridgelink Holdings, sourcing and evaluating small businesses.
+              </p>
+            </article>
+          </div>
+
+          <div class="degrees">
+            <article class="degree">
+              <img src="assets/story/vets-ball.jpg" alt="Portrait of Matthew in a tuxedo" width="1400" height="933" />
+              <h3>Columbia Business School &amp; School of International and Public Affairs</h3>
+              <p class="degree-line">MBA &amp; Master of International Affairs · New York, NY · 2025–2028</p>
+              <p><strong>Honors</strong>Consortium Fellow; In-semester Associate Consultant, Center for Public Research and Leadership; Hermes Society</p>
+              <p><strong>Leadership</strong>LEO Impact Fund AVP of Operations; Veterans Club AVP of Special Projects; AI Club AVP Operations</p>
+              <p><strong>Member</strong>Black Business Student Association; Family Business Club; Management Consulting Club; Veterans Club; Private Equity Club; ETA Club</p>
+            </article>
+            <article class="degree">
+              <img src="assets/story/west-point.jpg" alt="Matthew with fellow cadets at West Point" width="1090" height="721" />
+              <h3>United States Military Academy</h3>
+              <p class="degree-line">BS, Nuclear Engineering &amp; American Politics · West Point, NY · 2014–2018</p>
+              <p><strong>Honors</strong>National Debate Tournament Qualifier; George W.P. Walker Memorial Award for the Top Member of the Army Debate Team</p>
+              <p><strong>Leadership</strong>Social Sciences Advisory Council Member; Debate Team Captain; Regimental Logistics Officer</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="places" class="places">
+        <div class="wrap">
+          <div class="section-heading center">
+            <p class="kicker">The road</p>
+            <h2>Travel is how I keep learning.</h2>
+            <p>
+              I have visited all 50 states, 32 countries, and 62 of 63 U.S. national parks. Here are my top five.
+            </p>
+          </div>
+
+          <div class="rankings">
+            <div class="ranking">
+              <h3>National parks</h3>
+              <ol class="rank-list" role="list">
+                <li><img class="rank-photo" src="assets/story/glacier.jpg" alt="Matthew at the Glacier National Park sign" width="1024" height="768" /><span class="rank-name"><span class="rank-num">1</span>Glacier</span></li>
+                <li><img class="rank-photo" src="assets/story/lassen.jpg" alt="Matthew at Lassen Volcanic National Park" width="1600" height="1200" /><span class="rank-name"><span class="rank-num">2</span>Lassen Volcanic</span></li>
+                <li><img class="rank-photo" src="assets/story/sequoia.jpg" alt="Matthew beside a giant sequoia" width="1200" height="1600" /><span class="rank-name"><span class="rank-num">3</span>Sequoia</span></li>
+                <li><img class="rank-photo" src="assets/story/grand-teton.jpg" alt="Grand Teton National Park entrance sign" width="1024" height="768" /><span class="rank-name"><span class="rank-num">4</span>Grand Teton</span></li>
+                <li><img class="rank-photo" src="assets/story/acadia.jpg" alt="Matthew and his wife at Acadia National Park" width="768" height="1024" /><span class="rank-name"><span class="rank-num">5</span>Acadia</span></li>
+              </ol>
+            </div>
+            <div class="ranking">
+              <h3>States</h3>
+              <ol class="rank-list" role="list">
+                <li><img class="rank-photo" src="assets/story/virginia.jpg" alt="Matthew at Buckroe Beach in Virginia" width="768" height="1024" /><span class="rank-name"><span class="rank-num">1</span>Virginia</span></li>
+                <li><img class="rank-photo" src="assets/story/california.jpg" alt="Outside the Rose Bowl in Pasadena, California" width="1024" height="768" /><span class="rank-name"><span class="rank-num">2</span>California</span></li>
+                <li><img class="rank-photo" src="assets/story/michigan.jpg" alt="Outside the Motown Museum in Detroit, Michigan" width="768" height="1024" /><span class="rank-name"><span class="rank-num">3</span>Michigan</span></li>
+                <li><img class="rank-photo" src="assets/story/montana.jpg" alt="Matthew on a mountainside in Montana" width="1024" height="768" /><span class="rank-name"><span class="rank-num">4</span>Montana</span></li>
+                <li><img class="rank-photo" src="assets/story/newport.jpg" alt="Matthew by the coast in Newport, Rhode Island" width="1200" height="1600" /><span class="rank-name"><span class="rank-num">5</span>Rhode Island</span></li>
+              </ol>
+            </div>
+            <div class="ranking">
+              <h3>Countries</h3>
+              <ol class="rank-list" role="list">
+                <li><img class="rank-photo" src="assets/story/japan.jpg" alt="Matthew at a row of torii gates in Japan" width="1024" height="768" /><span class="rank-name"><span class="rank-num">1</span>Japan</span></li>
+                <li><img class="rank-photo" src="assets/story/warsaw.jpg" alt="Matthew in Warsaw, Poland" width="768" height="1024" /><span class="rank-name"><span class="rank-num">2</span>Poland</span></li>
+                <li><img class="rank-photo" src="assets/story/mexico-city.jpg" alt="The Zócalo in Mexico City" width="768" height="1024" /><span class="rank-name"><span class="rank-num">3</span>Mexico</span></li>
+                <li><img class="rank-photo" src="assets/story/chile.jpg" alt="Matthew traveling in Chile" width="1024" height="768" /><span class="rank-name"><span class="rank-num">4</span>Chile</span></li>
+                <li><img class="rank-photo" src="assets/story/amsterdam.jpg" alt="Matthew in Amsterdam in the Netherlands" width="1024" height="768" /><span class="rank-name"><span class="rank-num">5</span>The Netherlands</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="personal" class="personal">
+        <div class="wrap">
+          <div class="personal-grid">
+            <figure class="wedding-photo">
+              <img src="assets/story/wedding.jpg" alt="Matthew and his wife on their wedding day" width="724" height="1086" />
+            </figure>
+            <div class="personal-copy">
+              <p class="kicker">Closer to the center</p>
+              <h2>My favorite stories are shared ones.</h2>
+              <p class="love-line">I love my wife. She is my partner, my favorite travel companion, and the person who makes every new chapter feel like home.</p>
+              <p>
+                Scrapbooking is one of my favorite hobbies because it turns a collection of moments into a story. That is the idea behind this site too: leadership, family, places, teams, losses, wins, and the people beside me all belong on the same page.
+              </p>
+              <figure class="scrapbook-photo">
+                <img src="assets/story/scrapbooking.jpg" alt="Matthew surrounded by scrapbooking materials" width="768" height="1024" />
+                <figcaption>Scrapbook in progress</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="sports-layout">
+            <div class="sports-copy">
+              <p class="kicker">Home teams</p>
+              <h3>Detroit sports and Michigan Saturdays.</h3>
+              <p>
+                I love Detroit sports—the Lions, Tigers, Pistons, and Red Wings—and the kind of loyalty that survives long seasons and makes the good ones sweeter. University of Michigan sports are part of that rhythm too: the Big House, rivalry games, the Rose Bowl, and plenty of opinions afterward.
+              </p>
+            </div>
+            <div class="sports-bubbles" aria-label="Detroit and Michigan sports photographs">
+              <img src="assets/story/tigers.jpg" alt="Matthew at a Detroit Tigers game" width="768" height="1024" />
+              <img src="assets/story/pistons.jpg" alt="Matthew at a Detroit Pistons game" width="768" height="1024" />
+              <img src="assets/story/michigan-game.jpg" alt="Matthew at a Michigan football rivalry game" width="1199" height="1600" />
+              <img src="assets/story/rose-bowl.jpg" alt="Matthew at the Rose Bowl" width="768" height="1024" />
+              <img src="assets/story/lions.jpg" alt="Matthew in a Detroit Lions jersey on Thanksgiving" width="1049" height="1400" />
+              <img src="assets/story/redwings.jpg" alt="Matthew at a Detroit Red Wings exhibit" width="1050" height="1400" />
+            </div>
+          </div>
+
+          <div id="curiosity" class="curiosity-field">
+            <div class="curiosity-photo">
+              <img src="assets/story/senator-reid.jpg" alt="Matthew with Senator Harry Reid" width="793" height="990" />
+            </div>
+            <div class="curiosity-copy">
+              <p class="kicker">Still curious</p>
+              <h3>History started the questions. Building helps me test the answers.</h3>
+              <p>
+                I have loved U.S. history and public policy since I was young. Debate taught me to question the first answer; public service taught me that good ideas still need good implementation; trivia keeps the details fun. Today, AI gives me a new medium for the same instinct: learn quickly, connect distant ideas, and build something that helps.
+              </p>
+              <div class="interest-cloud" aria-label="Current interests">
+                <span>U.S. history</span>
+                <span>Public policy</span>
+                <span>Trivia</span>
+                <span>AI building</span>
+                <span>Leadership development</span>
+                <span>Small business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="living-index">
+        <div class="wrap">
+          <div class="section-heading center">
+            <p class="kicker">A living index</p>
+            <h2>The chapters keep connecting.</h2>
+            <p>Jump back into the story, or follow along as the next things get built.</p>
+          </div>
+          <nav class="index-orbs" aria-label="Page index">
+            <a href="#roots">Roots &amp; public service</a>
+            <a href="#leadership">Army leadership</a>
+            <a href="#legacy">Family enterprise</a>
+            <a href="#school">Business, policy &amp; school</a>
+            <a href="#places">Parks &amp; travel</a>
+            <a href="#curiosity">History, trivia &amp; AI</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-row">
+        <span>© 2026 Matthew J.A. Watts · A working scrapbook</span>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/matthew-w-2987021ba/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/vspmxmgs6x-bit" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
